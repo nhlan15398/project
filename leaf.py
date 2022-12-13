@@ -23,25 +23,25 @@ def pred_tomato_dieas(tomato_plant):
   pred = np.argmax(result, axis=1)
   print(pred)
   if pred==0:
-      return "Bac La", 'Tomato-Early-Blight.html'   
+      return "Bạc lá", 'Tomato-Early-Blight.html'   
   elif pred==1:
-      return "Hoan toan manh khoe", 'Tomato-Healthy.html'   
+      return "Hoàn toàn mạnh khỏe", 'Tomato-Healthy.html'   
   elif pred==2:
-      return "Khuon la", 'Tomato-Leaf-Mold.html'   
+      return "Khuôn lá", 'Tomato-Leaf-Mold.html'   
   elif pred==3:
-      return "Moc suong", 'Tomato-Late-blight.html'
+      return "Mốc sương", 'Tomato-Late-blight.html'
   elif pred==4:
-      return "Ve nhen", 'Tomato-Two-spotted-spider-mite.html'  
+      return "Ve nhện", 'Tomato-Two-spotted-spider-mite.html'  
   elif pred==5:
-      return "Vi rut kham ca chua", 'Tomato-Tomato-mosaic-virus.html' 
+      return "Vi rút khảm cà chua", 'Tomato-Tomato-mosaic-virus.html' 
   elif pred==6:
-      return "Vi rut xoan vang la", 'Tomato-Tomato-Yellow-Leaf-Curl-Virus.html'  
+      return "Vi rút xoăn vàng lá", 'Tomato-Tomato-Yellow-Leaf-Curl-Virus.html'  
   elif pred==7:
-      return "Dom la Septoria", 'Tomato-Septoria-leaf-spot.html'  
+      return "Đốm lá Septoria", 'Tomato-Septoria-leaf-spot.html'  
   elif pred==8:
-      return "Dom trang", 'Tomato-Target-Spot.html' 
+      return "Đốm trắng", 'Tomato-Target-Spot.html' 
   elif pred==9:
-      return "Dom la", 'Tomato-Bacteria-Spot.html' 
+      return "Đốm lá", 'Tomato-Bacteria-Spot.html' 
 
 
 app = Flask(__name__)

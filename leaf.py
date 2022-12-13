@@ -5,7 +5,7 @@ from keras.models import load_model
 import numpy as np
 import os
 
-filepath = 'D:/Plant-Leaf-Disease-Prediction/GoogLeNet_tomatoclassification.h5'
+filepath = '/home/ubuntu/project-doan/GoogLeNet_tomatoclassification.h5'
 model = load_model(filepath)
 model.load_weights(filepath)
 
@@ -23,25 +23,25 @@ def pred_tomato_dieas(tomato_plant):
   pred = np.argmax(result, axis=1)
   print(pred)
   if pred==0:
-      return "Bạc lá", 'Tomato-Early_Blight.html'   
+      return "Bac La", 'Tomato-Early-Blight.html'   
   elif pred==1:
-      return "Hoàn toàn mạnh khỏe", 'Tomato-Healthy.html'   
+      return "Hoan toan manh khoe", 'Tomato-Healthy.html'   
   elif pred==2:
-      return "Khuôn lá", 'Tomato - Leaf_Mold.html'   
+      return "Khuon la", 'Tomato-Leaf-Mold.html'   
   elif pred==3:
-      return "Mốc sương", 'Tomato - Late_blight.html'
+      return "Moc suong", 'Tomato-Late-blight.html'
   elif pred==4:
-      return "Ve nhện", 'Tomato - Two-spotted_spider_mite.html'  
+      return "Ve nhen", 'Tomato-Two-spotted-spider-mite.html'  
   elif pred==5:
-      return "Vi rút khảm cà chua", 'Tomato - Tomato_mosaic_virus.html' 
+      return "Vi rut kham ca chua", 'Tomato-Tomato-mosaic-virus.html' 
   elif pred==6:
-      return "Vi rút xoăn vàng lá", 'Tomato - Tomato_Yellow_Leaf_Curl_Virus.html'  
+      return "Vi rut xoan vang la", 'Tomato-Tomato-Yellow-Leaf-Curl-Virus.html'  
   elif pred==7:
-      return "Đốm lá Septoria", 'Tomato - Septoria_leaf_spot.html'  
+      return "Dom la Septoria", 'Tomato-Septoria-leaf-spot.html'  
   elif pred==8:
-      return "Đốm trắng", 'Tomato - Target_Spot.html' 
+      return "Dom trang", 'Tomato-Target-Spot.html' 
   elif pred==9:
-      return "Đốm lá", 'Tomato-Bacteria Spot.html' 
+      return "Dom la", 'Tomato-Bacteria-Spot.html' 
 
 
 app = Flask(__name__)
@@ -64,7 +64,7 @@ def predict():
         file = request.files['image'] 
         filename = file.filename        
         
-        file_path = os.path.join('D:/Plant-Leaf-Disease-Prediction/static/upload/', filename)
+        file_path = os.path.join('/home/ubuntu/project-doan/static/upload/', filename)
         file.save(file_path)
 
         pred, output_page = pred_tomato_dieas(tomato_plant=file_path)     

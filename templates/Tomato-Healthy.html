@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fonts/fontawsome/css/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/reset.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/global.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css' )}}">
+
+    <title>Chuẩn đoán và điều trị</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="logo text-center">
+                    <img src="{{url_for('static',filename = 'images/logo.jpg' )}}" alt="logo" class="w-h">
+                </div>
+                <!-- end logo -->
+            </div>
+            <div>
+                <ul id="main-menu" class="d-flex container justify-content-between">
+                    <li><a href=""><i class="fa-solid fa-house-user"></i><br>Trang chủ</a></li>
+                    <li><a href="cd"><i class="fa-solid fa-camera-retro"></i><br>Chuẩn đoán</a></li>
+                    <li><a href="book"><i class="fa-solid fa-book"></i><br>Sách</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <div>
+            <h1 class="text-center font-size-25">Dự đoán bệnh trên cây cà chua và <br>
+                cách chữa bệnh</h1>
+        </div><br>
+        <div class="container d-flex ">
+            <div class="width-400">
+                <span>
+                    <img src="{{url_for('static',filename = 'images/Tomato___healthy .JPG')}}" alt="User Image" class="border-15">
+                </span>
+            </div>
+
+            <div class="width-400">
+                <div>
+                    <h2 style="background-color: rgb(15, 15, 15); color: white; text-align: center;">
+                        {{pred_output}} </h2>
+                </div>
+                <div>
+                    <h4><b> Điều trị : </b> </h4>
+                    <ul>
+                        <p>...</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

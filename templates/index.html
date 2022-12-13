@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fonts/fontawsome/css/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/reset.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/global.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css' )}}">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="logo text-center">
+                    <img src="{{url_for('static',filename = 'images/logo.jpg' )}}" alt="logo" class="w-h">
+                </div>
+                <!-- end logo -->
+            </div>
+            <div>
+                <ul id="main-menu" class="d-flex container justify-content-between">
+                    <li><a href="home"><i class="fa-solid fa-house-user"></i><br>Trang chủ</a></li>
+                    <li><a href="cd"><i class="fa-solid fa-camera-retro"></i><br>Chuẩn đoán</a></li>
+                    <li><a href="book"><i class="fa-solid fa-book"></i><br>Sách</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <div id="wp-featured-post" class="container">
+            <div class="box featured-post">
+                <div class="box-head">
+                    <h3>GIỚI THIỆU</h3>
+                </div>
+                <div class="box-body">
+                    <p><b> <i> Việt Nam là một nước có nông nghiệp phát triển, năng suất nông nghiệp là thứ mà nền kinh
+                                tế phụ
+                                thuộc rất nhiều vào nó. Dịch bệnh trên cây trồng là mối nguy chính đối với nền an ninh
+                                lương
+                                thực. Việc phát hiện và chuẩn đoán đúng bệnh cây trồng là cần thiết để sử dụng đúng
+                                thuốc trừ
+                                sâu loại bỏ tất cả các bệnh càng nhanh càng tốt cũng như cứu chính chúng ta khỏi sự tàn
+                                phá của
+                                mùa màng.</i></b></p>
+                </div>
+            </div>
+        </div>
+        <!-- end featured-post -->
+        <div id="wp-content" class="container">
+            <div id="content">
+                <div class="box new-post">
+                    <div class="box-head">
+                        <h3>HƯỚNG DẪN</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+    </div>
+</body>
+
+</html>

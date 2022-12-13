@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'fonts/fontawsome/css/all.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/reset.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/global.css' )}}">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/main.css' )}}">
+
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div class="container">
+                <div class="logo text-center">
+                    <img src="{{url_for('static',filename = 'images/logo.jpg' )}}" alt="logo" class="w-h">
+                </div>
+                <!-- end logo -->
+            </div>
+            <div>
+                <ul id="main-menu" class="d-flex container justify-content-between">
+                    <li><a href=""><i class="fa-solid fa-house-user"></i><br>Trang chủ</a></li>
+                    <li><a href="cd"><i class="fa-solid fa-camera-retro"></i><br>Chuẩn đoán</a></li>
+                    <li><a href="book"><i class="fa-solid fa-book"></i><br>Sách</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <div>
+            <div>
+                <h1 class="text-center font-size-20">Chuẩn đoán bệnh và điều trị</h1>
+            </div> <br><br>
+            <div class="container">
+                <div class="logo justify-content-center">
+                <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+                    <input type="file" name="image" class="upload"> <br><br>
+                    <input type="submit" value="CHUẨN ĐOÁN">
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

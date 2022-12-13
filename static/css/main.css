@@ -1,0 +1,159 @@
+
+/* -----------------HOME--------------*/
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.container{
+    width: 100wh;
+    padding-left: 30wh;
+    padding-right:30wh;
+    margin: 0px auto;
+    display: flex;
+}
+.logo{
+    max-width: 100%;
+    margin: 0px auto;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+/* ============ HEADER ============= */
+
+#header{
+    background: rgb(68, 137, 68);
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+ul#main-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 50wh;
+    font-weight: 550;
+}
+
+ul#main-menu li:first-child a{
+    padding-left: 20px;
+}
+
+ul#main-menu li:hover a,
+ul#main-menu li.active a
+{
+    color: rgb(15, 15, 49);
+    text-decoration: none;
+}
+
+/* ============ FEATURED POST ============ */
+#wp-featured-post{
+    margin-bottom: 20px;
+}
+
+.box .box-head h3{
+    display: inline-block;
+    color: #eee;
+    background: #23282d;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 1px 15px;
+    margin-bottom: 0;
+}
+
+.box .box-body{
+    padding-top: 20px 20px;
+}
+
+.box.featured-post .box-body{
+    padding-top: 10px;
+    border-bottom: 2px solid #dadada;
+}
+
+/* =========== WP_CONTENT ========= */
+
+#content{
+    flex: 80%;
+    padding-right: 15px;
+}
+
+/* ----------- Content ------------ */
+.box.new-post .box-head{
+    border-bottom: 2px solid #4db2ec;
+}
+
+.box.new-post .box-head h3{
+    background: #4db2ec;
+}
+
+/* -----------------CD------------------ */
+form {
+    display: inline-block;
+    min-height: 30vh;
+    align-items: center;
+    width: 50%;
+    line-height: 1.5;
+}
+
+.upload {
+    font-size: 18px;
+    background-color: rgb(245, 234, 234);
+    width: 380px;
+    text-align: center;
+    color: rgb(30, 27, 27);
+}
+
+::-webkit-file-upload-button {
+    color: rgb(255, 252, 252);
+    padding: 18px;
+    border: 2px solid rgb(188, 18, 18);
+    background-color: rgb(188, 18, 18);
+    border-radius: 15px;
+}
+
+::-webkit-file-upload-button:hover {
+    background-color: red;
+}
+
+input[type="submit"] {
+    position: absolute;
+    padding: 15px 15px;
+    background-color: rgb(84, 201, 114);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid rgb(153, 190, 167);
+    margin-left: 120px;
+}
+
+input[type="submit"]:hover {
+    background: rgb(4, 93, 4);
+}
+
+/* ------------BOOK------------ */
+.list-book {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
